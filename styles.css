@@ -61,18 +61,198 @@ table {
     --black: #000000;
 }
 
-#skip {
-	left: -10000px;
-    top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
+#skip
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+#skip:focus
+{
+position:static;
+width:auto;
+height:auto;
 }
 
 h1,
 h2,
 h3 {
-	font-family: "Molle";
+	font-family: "Molle", cursive;
 	margin: auto;
+	padding-left: 2rem;
+}
+h1{
+	font-size: 60px;
+    padding-top: 40px;
+   text-align: left;
+}
+h2, h3{
+    font-size: 20px;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	line-height: 1.5;
+	margin: 10px 0;
+	padding:0;
+}
+
+h4,
+p,
+q,
+small,
+nav,
+button,
+form {
+	font-family: "Montserrat", sans-serif;
 	padding-left: 1rem;
 }
+header p{
+    font-size: 20px;
+}
+
+nav{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+nav, ul, li{
+    display: block;
+    margin:10px 10px 10px 10px;
+    text-align:center;
+    float:right;
+   
+}
+label[for=toggle]{
+    background-color:black;
+    color:#fff;
+}
+li, a{
+    text-decoration: none;
+}
+.main-content{
+    display:flex;
+}
+#img-grid img{
+    width: 10%;
+    display: inline-block;
+    
+}
+#intro{
+    display: flex;
+}
+#intro p{
+    flex: 3;
+}
+#plan{
+    background-color:#f6d64a;
+    padding-top: 55px;
+    padding-bottom: 70px;
+}
+#plan h3{
+    
+    padding-bottom:20px;
+    padding-left: 60px;
+
+}
+#plan h4{
+    padding-top:10px;
+    padding-bottom:20px;
+    padding-left: 40px;
+}
+#plan div{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#plan img{
+    width: 100px;
+    height: 100px;
+  padding-left:50px;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+#plan section{
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border: 20px;
+    border-color: #fff;
+    background:#55bcd5;
+    align-items: center;
+
+   
+}
+#testimonials img{
+    width: 100px;
+    height: 100px;
+    padding-bottom: 10px;
+
+}
+#testimonials div{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+}
+#testimonials section{
+    padding: 80px;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+
+#testimonials h3{
+    padding-left: 80px;
+    padding-top: 60px;
+}
+
+#testimonials h4{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 23px;
+    font-weight:bold;
+    
+}
+
+#testimonials p{
+    padding-top: 2px;
+    padding-bottom: 2px;
+   
+    
+}
+
+#testimonials q{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 250px;
+}
+/* About*/
+#about{
+    background-color:#499bd2;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#about section{
+    display: inline-block;
+    align-items: center;
+}
+
+#about div{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#about img{
+    width: 70px;
+    height: 70px;
+}
+
+
